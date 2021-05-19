@@ -1,0 +1,216 @@
+:root {
+  --font-primary: 'alata';
+  --font-secundary: 'josefin';
+}
+body {
+  font-family: var(--font-secundary);
+}
+/* HEADER
+=============================== */
+.header {
+  display: flex;
+  position: relative;
+  background: url(../media/images/desktop/image-hero.jpg);
+  color: white;
+  height: 30rem;
+  justify-content: space-between;
+}
+.logo {
+  margin: 5vh 10vw;
+}
+.menu-top {
+  display: flex;
+  margin: 5.7vh 10vw;
+}
+.menu-top-mobile {
+  display: none;
+}
+.menu-hamburger {
+  display: none;
+}
+.menu-close {
+  display: none;
+}
+.menu-top li a {
+  position: relative;
+  color: white;
+  margin-right: 1rem;
+}
+.menu-top li a:hover::after {
+  content: "";
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  bottom: -50%;
+  border-bottom: 2px solid white;
+}
+.header-title {
+  position: absolute;
+  font-size: 4.9vw;
+  text-transform: uppercase;
+  border: 1px solid white;
+  padding: 3vh 8.5vw 3vh 2.7vw;
+  height: max-content;
+  left: 10vw;
+  top: 18vh;
+}
+
+/* COMPANY INFO
+=============================== */
+.info-company {
+  display: flex;
+  position: relative;
+  margin: 7vh 10vw;
+}
+.info-company-image {
+  display: flex;
+}
+.info-company-image img {
+  width: 55vw;
+}
+.info-company-image-mobile {
+  display: none;
+}
+.info-company-text {
+  position: absolute;
+  width: 31vw;
+  right: 0;
+  bottom: 0;
+  padding: 8vh 0 0 6vw;
+  background-color: white;
+}
+.info-company-title {
+  text-transform: uppercase;
+  font-size: 3.5vw;
+  margin-bottom: 2vh;
+}
+.info-company-p {
+  color: gray;
+  font-size: 1.3vw;
+}
+
+/* CREATIONS HEADER 
+===============================*/
+.creations {  
+  display: flex;
+  flex-direction: column;
+  margin: 0 10vw 0 10vw;
+}
+.creations-head {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  margin: 5vh 0;
+}
+.creations-title{
+  font-size: 2.5vw;
+  font-weight: bold;
+}
+.creations-link {
+  display: flex;
+  padding: .8vh 3.5vw;
+  font-weight: bold;
+  background: white;
+  color: black;
+  border: 2px solid black;
+  align-items: center;
+}
+.creations-link:hover {
+  background: black;
+  color: white;
+}
+.seeall-mobile {
+  display: none;
+}
+
+/* CREATIONS CONTENT 
+===============================*/
+.creations-container-mobile {
+  display: none;
+}
+.creations-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5vw;
+}
+.container-text img {
+  width: calc(75.5vw / 4);
+}
+.container-text:hover img {
+  opacity: .7;
+}
+.container-text:hover h3 {
+  color: black;
+}
+.container-text {
+  position: relative;
+}
+.container-text h3 {
+  position: absolute;
+  left: 3vw;
+  bottom: 3vh;
+  right: 2.5vw;
+  color: white;
+  text-transform: uppercase;
+  font-size: 2.5vw;
+  font-weight: bold;
+}
+
+/* FOOTER
+======================= */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  margin-top: 14vh;
+}
+.first-column {
+  display: flex;
+  flex-direction: column;
+}
+.logo-bottom {
+  margin: 3vh 10vw 1vh 10vw;
+}
+.menu-bot {
+  display: flex;
+  margin: 1.5vw 10vw 2.5vh 10vw;
+}
+.menu-bot li a {
+  position: relative;
+  color: white;
+  margin-right: 1.6vw;
+}
+.menu-bot li a:hover::after {
+  content: "";
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  bottom: -50%;
+  border-bottom: 2px solid white;
+}
+
+.last-column {
+  display: flex;
+  flex-direction: column;
+}
+.social-medias a  {
+  position: relative;
+  padding-left: 1.6vw;
+}
+.social-medias a:hover::after {
+  content: "";
+  position: absolute;
+  left: 40%;
+  right: 0%;
+  bottom: -50%;
+  border-bottom: 2px solid white;
+}
+.social-medias {
+  position: relative;
+  margin: 2.5vw 10vw 1.6vh 10vw;
+  text-align: right;
+}
+.copyright {
+  margin: 2vh 10vw;
+  color: gray;
+}
